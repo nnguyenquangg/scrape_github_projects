@@ -7,6 +7,6 @@ class UserPayload(BaseModel):
 
 app = FastAPI()
 
-@app.post("/")
+@app.post("/scrape")
 async def scrape_github(payload: UserPayload):
     return await scrape_github_projects(payload.username)
