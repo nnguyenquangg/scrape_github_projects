@@ -1,6 +1,6 @@
 import aiohttp
 from bs4 import BeautifulSoup
-from export_csv import export_csv
+from heplers.export_csv import export_csv
 
 async def scrape_github_projects(username):
     repos = []
@@ -39,5 +39,5 @@ async def scrape_github_projects(username):
                 else:
                     print(f'Failed to retrieve the page. Status code: {response.status}')
                     break
-        await export_csv(repos)
+        await export_csv(username,repos)
         return repos

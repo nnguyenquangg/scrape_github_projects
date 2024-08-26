@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from scraping import scrape_github_projects
+from heplers.scraping import scrape_github_projects
 from pydantic import BaseModel
 
 class UserPayload(BaseModel):

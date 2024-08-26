@@ -1,5 +1,5 @@
 name,description,language
-scrape_github_projects,No description,Not specified
+scrape_github_projects,No description,Python
 nestjs-codebase,No description,TypeScript
 Leetcode-Algorithms,No description,Not specified
 infrastructure,No description,Shell
